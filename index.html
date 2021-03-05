@@ -21,6 +21,8 @@
       </script>
       <![endif]-->
       <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+      <!-- Hotjar Tracking Code for www.huxa.co -->
+
    </head>
    <body>
       <div class="">
@@ -454,17 +456,20 @@
       });
       
    </script>
-   <script>
-      window.fcWidget.init({
-        token: "0acdbaa0-6989-48d3-af0c-18cb62dd49fb",
-        host: "https://wchat.freshchat.com",
-        config: {
+    <script>
+      function initFreshChat() {
+        window.fcWidget.init({
+          token: "b1e41f19-3870-4f9c-93b6-1cec22d0c21e",
+          host: "https://wchat.freshchat.com",
+          config: {
           headerProperty:{
              hideChatButton: true,
           }
         }
-      });
-   </script>
+        });
+      }
+      function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+    </script>
    <!-- Global site tag (gtag.js) - Google Analytics -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64496523-1"></script>
    <script>
